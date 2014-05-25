@@ -1,0 +1,7 @@
+parameters:
+#    giurgiu_ovidiu.example.class: Giurgiu\OvidiuBundle\Example
+
+services:
+#    giurgiu_ovidiu.example:
+#        class: %giurgiu_ovidiu.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

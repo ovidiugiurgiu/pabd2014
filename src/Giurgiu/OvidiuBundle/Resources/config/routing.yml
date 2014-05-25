@@ -1,0 +1,12 @@
+giurgiu_ovidiu_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: GiurgiuOvidiuBundle:Default:index }
+pagina_personala:
+    pattern:  /utilizator/{name}
+    defaults: { _controller: GiurgiuOvidiuBundle:Users:pagina }	
+pagina_contact:
+    pattern:  /contact/{name}
+    defaults: { _controller: GiurgiuOvidiuBundle:Users:contact }	
+pagina_despre:
+    pattern:  /despre/{name}
+    defaults: { _controller: GiurgiuOvidiuBundle:Users:despre }			

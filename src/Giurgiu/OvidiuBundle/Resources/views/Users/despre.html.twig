@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Pagina personala Giurgiu Ovidiu</title>
+	{% block stylesheets %}
+		<link href="{{ asset('bundles/giurgiuovidiu/css/users.css') }}" type="text/css" rel="stylesheet" />
+		<link href="{{ asset('bundles/giurgiuovidiu/css/bootstrap.css') }}" type="text/css" rel="stylesheet" />
+	{% endblock %}
+</head>
+
+<body>
+
+<div id="wrapper">
+	
+	<div id="header"><h1>Pagina mea</h1></div>
+	
+	<div id="family"></div>
+	
+	<div id="head-top"></div>
+	<div id="head-right"></div>
+	
+	<div id="nav">
+		<ul>
+			<li><a class="tooltips" data-toggle="tooltip" data-placement="top" title="Tooltip acasa" href="{{ path('pagina_personala', {'name': name}) }}">Acasa</a></li>
+			<li><a class="tooltips" data-toggle="tooltip" data-placement="top" title="Tooltip contact" href="{{ path('pagina_contact', {'name': name}) }}">Contact</a></li>
+			
+		</ul>
+		<div id="nav-bot"></div>
+	</div>
+	
+	<div id="body"><div class="i">
+		<h2 class="shallow"><strong>Bun venit</strong> pe pagina despre {{ name }}</h2>
+		<p>Aceasta este pagina despre mine</p>
+								
+		<a href="{{ path('pagina_personala', {'name': name}) }}">Du-ma inapoi la home!</a>
+
+	</div></div>
+	
+</div>
+{% block javascripts %}
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="{{ asset('bundles/giurgiuovidiu/js/bootstrap.min.js') }}" /></script>
+	{% endblock %}
+	<script>
+	$('.tooltips').tooltip();
+	</script>
+
+</body>
+</html>
+
